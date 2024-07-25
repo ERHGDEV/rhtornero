@@ -1,0 +1,29 @@
+---
+import Section from "./Section.astro"
+---
+
+<Section
+    title="Ricardo Hernández"
+    subtitle="Torneado en madera"
+    color="white"
+    id="home"
+>
+    <div slot="footer">
+        <a 
+        class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-xm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+        href="#"
+        >
+            Contáctame
+        </a>
+    </div>
+
+    <video 
+        slot="background"
+        class="object-center object-cover h-full w-full"
+        autoplay
+        muted
+        loop
+        src="video.webm"
+    >
+    </video>
+</Section>

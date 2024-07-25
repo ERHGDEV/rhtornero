@@ -1,0 +1,37 @@
+---
+import ContentOne from '../components/ContentOne.astro';
+import ContentTwo from '../components/ContentTwo.astro';
+import ContentThree from '../components/ContentThree.astro';
+import HeroSection from '../components/HeroSection.astro';
+import LandingHeader from '../components/LandingHeader.astro';
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout title="Ricardo Hernández Tornero">
+	
+	<main 
+		class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+	>
+
+		<LandingHeader />
+
+		<div class="snap-center scroll-smooth">
+			<HeroSection />
+		</div>
+
+		<div class="snap-center scroll-smooth">
+			<ContentOne />
+		</div>
+
+		<div class="snap-center scroll-smooth">
+			<ContentTwo />
+		</div>
+
+		<div class="snap-center scroll-smooth">
+			<ContentThree />
+		</div>
+	</main>
+</Layout>
+
+
